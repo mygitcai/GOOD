@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片旋转</title>
+    <script>
+        function imageRotation(name){
+            document.getElementById('image').className=name;
+        }
+    </script>
+    <style>
+        .rotate-90{transform: rotate(90deg);
+        }
+        .rotate{
+            transform: rotate(180deg);
+        }
+        .flip-horizontal{
+            transform: scaleX(-1);
+        }
+        .flip-vertical{
+            transform: scaleY(-1);
+        }
+
+    </style>
+</head>
+<body>
+  <img src="../图片/1.jpg" width="500" contextmenu="demo-image" id="image"/>
+  <menu id="demo-image" type="context">
+      <menu label="旋转图像"> 
+          <menuitem icon="../图片/1.jpg" onlick="imageRotation('roate-90')"
+      </menu>
+  </menu>  
+</body>
+</html>

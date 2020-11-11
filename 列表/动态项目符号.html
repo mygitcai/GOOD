@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态项目符号</title>
+    <style>
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style:none;
+            border-bottom: 1px dashed #aaa;
+            width: 20em;
+        }
+        li{
+            padding: 0.5em;
+            border-top: 1px dashed #aaa;
+        }
+        li a{
+            display:block;
+            padding-left: 1.5em;
+            background:url(../图片/2.jpg) left center no-repeat;
+            text-decoration:none;
+        }
+        li a:link{
+            background:url(../图片/2.jpg) right center no-repeat
+        }
+        li a:visited{
+            background:url(../图片/3.jpg) right center no-repeat;
+        }
+        li a:hover{
+            background: url(../图片/1.jpg) left center no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <a href="../图片/1.jpg">新闻</li>
+        <li> <a href="../图片/2.jpg">社区</li>
+        <li> <a href="../图片/2.jpg">微博</li>
+        <li> <a href="../图片/2.jpg">微信</li>
+    </ul>   
+</body>
+</html>
