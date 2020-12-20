@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autfocus属性</title>
+</head>
+<body>
+    <form>
+        <p>请仔细阅读许可协议：</p>
+        <p>
+            <label for="textarea1"></label>
+            <textarea name="textarea1" id="textarea1" cols="45" rows="5">许可协议具体内容······</textarea>
+        </p>
+        <p>
+            <input type="submit" value="同意" autofocus>
+            <input type="submit" value="拒绝">
+        </p>
+    </form>
+    <br>
+    <br>
+    <br>
+    <h2>输入你最喜欢的城市名称</h2>
+    <form autocomplete="on">
+        <input type="text" id="city" list="cityList">
+        <datalist id="cityList" style="display:none;">
+        <option value="BeiJing">BeiJing</option>
+        <option value="QingDao">QingDao</option>
+        <option value="QingZhou">QingDao</option>
+        <option value="QingHai">QingHai</option>
+        </datalist>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form action="demo_fro.php" method="get">
+        请选择年份和周数：<input type="week" name="week1"/>
+        <input type="submit"/>
+    </form>
+    <br>
+    <br>
+    <form action="demo_form.php" method="get">
+        请输入网址：<input type="url" name="user_url"/><br/>
+        <input type="submit"/>
+    </form><br>
+    <br>
+    <from action="demo_form.php" method="get">
+        请输入数值：<input type="number" name="nmber1" min="1" max="20" step="4">
+        <input type="submit"/>
+    </from>
+</body>
+</html>

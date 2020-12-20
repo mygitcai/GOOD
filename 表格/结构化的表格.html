@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>结构化的表格</title>
     <style type="text/css">
-   
+   #padding{
+       padding:100px;
+       margin: 0;
+   }
     caption{
         font-size: 24px;
         margin: 12px;
         color: blue;
     }
     th,td{
+        border:solid 1px bule;
         text-align: right;
         color: red;
+    }
+    tfoot td{
+        text-align:right;color:red;
     }
    
      .col1{
      width: 100%;
      color: red;
      font-size: 16px;
-}
+          }
 .col2{
     width: 50%;
     color: blue;
-}
+      }
 
 </style>
 </head>
 <body>
- <table width: 100%;  border:1px;>
+ <table  width:"100%"  >
      <caption>结构化表格标签</caption>
      <thead>
          <tr>
@@ -58,11 +65,13 @@
             <td>&lt;tfoot&gt</td>
             <td>定义表格的页脚结构</td>
         </tr>
+   
     </tbody>
- </table> 
- <hr>
+ </table>
+
+ <br>
  
- <table width="100%" border="1">
+ <table id="padding" border="5" >
      <col align="left">
      <col align="center">
      <col align="right">
@@ -78,9 +87,9 @@
      </tr>
  </table>
 
- <hr>
+ <br>
 
- <table width="100" border="1">
+ <table width="100"border="1"  rules="all">
      <colgroup span="1" class="col1"></colgroup>
     <colgroup class="col2"></colgroup>
     <tr>

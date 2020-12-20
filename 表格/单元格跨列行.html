@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单元格跨列，跨行显示</title>
+</head>
+<body>
+    <table frame="hsides" rules="all" cellpadding="20"><!--有效的单元格补白-->
+        <tr>
+            <th align="center" colspan="5">课程表</th>
+        </tr>
+        <tr ><th cellpadding="20">星期一</th> <th cellpadding="20">星期二</th> <th>星期三</th><th>星期四</th><th>星期五</th></tr>
+        <!--无效的单元格补白-->
+        <tr>
+            <td align="center" colspan="5"></td>
+        </tr>
+        <tr>
+            <td>语文</td><td>数学</td><td>英语</td><td>物理</td><td>生物</td>
+        </tr>
+        <tr><td align="center" rowspan="6" font-style="italic" text-decoration="blink">昨天扫地没扫的<br>今明两天全包了 ：张三，李四 ，
+            王五，赵六</td></tr>
+        <tr><td>1</td><td>语文</td><td>1</td></tr>
+        <tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+        <tr><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr>
+        <tr><td>4</td></tr>
+        <tr><td>5</td></tr>
+        <tr><td>物理</td></tr>
+    </table>
+</body>
+</html>

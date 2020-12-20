@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单</title>
+    <style>
+        .menu{
+            position: absolute;
+            top: 164px;
+            left: 20px;
+            width: 748px;
+            padding: 0 0 0 1em;
+            margin: 0;
+            list-style: none;
+            height: 35px;
+            background-color: aqua;
+        }
+        .menu li{float: left;}
+        .menu li a{
+            display: block;
+            float: left;
+            height: 35px;
+            line-height: 33px;
+            color: #ffff00;
+            text-decoration: none;
+            font-family: arial,verdana,sans-serif;
+            text-align: center;
+            padding: 0 0 0 14px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        .menu li a b{
+            float: left;
+            display:block;
+            padding: 0 28px 0 14px;
+        }
+        .menu li .current a{
+            color: #fff;
+            background: url(../图片/皮卡丘.jpg);
+
+        }
+        .munu li.current a b{
+            background: url(../图片/风景2.jpg);
+        }
+        .menu li.current a:hover{
+            color: #fff;
+            background: url(../图片/搞怪.jpg);
+            cursor: default;
+        }
+        .menu li.current a:hover b{
+            background: url(../图片/动漫2.jpg) no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+  <ul class="menu">
+      <li><a href="../图片/动漫.jpg"><b>查看图片</b></a></li>
+      <li><a href="../图片/搞怪.jpg"><b>图片二</b></a></li>
+      <li><a href="../图片/皮卡丘.jpg"><b>图片三</b></a></li>
+      <li class="current"><a href="../图片/风景.jpg">图片四</a></li>
+      <li><a href="../图片/风景2.jpg"><b>这个图片是真的好看，确定不点进来看看？</b></a></li>
+  </ul>  
+</body>
+</html>

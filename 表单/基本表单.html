@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单结构</title>
+</head>
+<body>
+    <from action="#" method="get" id="from1" name="from1">
+        <p>用户名：
+            <input name="" type="text"/>
+        </p>
+        <p>密码：
+           <input name="" type="text"/>
+        </p>
+        <p>
+            <input type="submit" value="提交"/>
+        </p>
+    </from>
+<br>
+<br>
+    <from  action="a.php" method="get" id="from" name="from1">
+        <p>上传照片：
+            <input name="" type="file"/>
+        </p>
+        <p><input type="submit" value="提交"/></p>
+    </from>
+<br>
+<br>
+<br>
+<from>
+    <p>姓名：<input type="text" value=""/></p>
+    <p>性别：
+        <lable>
+            <input type="radio" name="RadioGroup1" value="男"/>
+            男
+        </lable>
+        <lable>
+            <input type="radio" name="RadioGroup1" value="女"/>女
+        </lable>
+        <lable>
+            <input type="radio" name="RadioGroup1" value="保密" checked="checked"/>保密
+        </lable>
+    </p>
+    <p><input type="submit" value="提交"/></p>
+</from>
+<br>
+<from>
+    <p><input type="button" value="123456"/></p>
+    
+    <p><input type="hidden" value="隐藏"/></p>
+    
+    <p><input type="password" value="请输入密码"/></p>
+    
+    <p><input type="submit" value="提交"/></p>
+    
+    <p><input type="text" value="请输入你的名字" maxlength="100" reasonly/></p>
+    <p><input type="text" value="请输入您的姓名" maxlength="100" disabled/></p>
+</from>
+</body>
+</html>
